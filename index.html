@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y64C1852MZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-Y64C1852MZ');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>二五珠算盘 | Chinese Abacus</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 添加网站图标 -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='70' x='0' y='15' fill='%23A0522D' rx='5' ry='5'/%3E%3Cline x1='0' y1='45' x2='100' y2='45' stroke='%23D2B48C' stroke-width='5'/%3E%3Ccircle cx='20' cy='30' r='8' fill='%23B22222'/%3E%3Ccircle cx='50' cy='30' r='8' fill='%23B22222'/%3E%3Ccircle cx='80' cy='30' r='8' fill='%23B22222'/%3E%3Ccircle cx='20' cy='60' r='8' fill='%23B22222'/%3E%3Ccircle cx='35' cy='60' r='8' fill='%23B22222'/%3E%3Ccircle cx='50' cy='60' r='8' fill='%23B22222'/%3E%3Ccircle cx='65' cy='60' r='8' fill='%23B22222'/%3E%3Ccircle cx='80' cy='60' r='8' fill='%23B22222'/%3E%3C/svg%3E" type="image/svg+xml">
+    
+    <!-- 预加载图片资源 -->
+    <link rel="preload" as="image" href="assets/images/wood_texture.jpg">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>二五珠算盘</h1>
+            <div class="subtitle">
+                <p class="chinese">体验中国传统计算工具，点击算珠进行计算</p>
+                <p class="english">Experience traditional Chinese counting tool, click beads to calculate</p>
+            </div>
+        </header>
+        
+        <main>
+            <div class="abacus-container">
+                <canvas id="abacus" width="900" height="450"></canvas>
+            </div>
+            
+            <div class="controls">
+                <div class="buttons-group">
+                    <button id="reset-btn">重置算盘 Reset</button>
+                    <button id="fullscreen-btn">全屏体验 Fullscreen</button>
+                </div>
+                <div class="volume-control">
+                    <label for="volume">音量 Volume:</label>
+                    <input type="range" id="volume" min="0" max="1" step="0.1" value="0.5">
+                </div>
+            </div>
+            
+            <div class="instructions">
+                <h3>使用说明</h3>
+                <p>点击算珠可以移动它们。上方每颗算珠（上珠）代表5，下方每颗算珠（下珠）代表1。</p>
+                <p>每列上方有2颗上珠，下方有5颗下珠，珠子靠近横梁时表示计数，远离横梁时不计数。</p>
+                <p>上方第二颗珠子必须在第一颗已靠近横梁时才能移动。每列最多可表示15（5×2+1×5=15）。</p>
+                <p>算盘从右到左依次表示个位、十位、百位等。点击"使用说明"按钮获取更多详情。</p>
+                
+                <h3>Instructions</h3>
+                <p>Click on beads to move them. Each upper bead represents 5, each lower bead represents 1.</p>
+                <p>Each column has 2 upper beads and 5 lower beads. Beads count when moved toward the beam, and don't count when away from it.</p>
+                <p>The second upper bead can only be moved after the first one is already at the beam. Each column can represent up to 15 (5×2+1×5=15).</p>
+                <p>The abacus reads from right to left: ones, tens, hundreds, etc. Click the "Instructions" button for more details.</p>
+            </div>
+        </main>
+        
+        <footer>
+            <p>© 2025 中国算盘互动体验 | Chinese Abacus Interactive Experience</p>
+        </footer>
+    </div>
+
+    <!-- 全屏模式对话框 -->
+    <div id="fullscreen-modal" class="fullscreen-modal">
+        <div class="fullscreen-content">
+            <span class="close-fullscreen">&times;</span>
+            <div class="fullscreen-abacus-container">
+                <canvas id="fullscreen-abacus" width="1200" height="600"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- 隐藏的图片预加载 -->
+    <div style="display:none;">
+        <img src="assets/images/wood_texture.jpg" alt="Wood Texture">
+    </div>
+
+    <script src="js/abacus.js"></script>
+    <script src="js/sound.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
