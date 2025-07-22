@@ -1,0 +1,18 @@
+# SEO指南文件（仅本地使用）
+SEO-guide.md
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 编辑器文件
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 本地服务器脚本
+server.py
+
+# 日志文件
+*.log 
