@@ -38,6 +38,64 @@
       }
     }
     </script>
+    
+    <!-- FAQ结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "什么是二五珠算盘？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "二五珠算盘是中国传统算盘的一种，每列有上方2颗珠子（每颗代表5）和下方5颗珠子（每颗代表1）。它是中国古代重要的计算工具，至今仍在使用。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "算盘如何进行计算？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "算盘通过拨动珠子来计算。珠子靠近横梁时计数，远离横梁时不计数。上珠每颗代表5，下珠每颗代表1。每列从右到左依次表示个位、十位、百位等。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "算盘有什么历史意义？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "算盘是中国古代四大发明之外的重要发明，有超过2000年的历史。它不仅是计算工具，也是中国传统文化的重要组成部分，对数学教育和思维发展有独特价值。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a 2-5 abacus?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A 2-5 abacus is a traditional Chinese abacus with 2 beads in the upper deck (each representing 5) and 5 beads in the lower deck (each representing 1). It has been an important calculation tool in ancient China and is still in use today."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do calculations work on an abacus?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Calculations are performed by moving beads toward or away from the beam. Beads count when moved toward the beam, and don't count when away from it. Each upper bead represents 5, each lower bead represents 1. Columns represent place values from right to left: ones, tens, hundreds, etc."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the historical significance of the abacus?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The abacus is an important invention beyond China's Four Great Inventions, with over 2000 years of history. It's not just a calculation tool but also an essential part of Chinese traditional culture, offering unique value for mathematics education and cognitive development."
+          }
+        }
+      ]
+    }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="体验中国传统二五珠算盘，在线互动学习使用方法，点击算珠进行计算。提供完整教程和历史文化背景，适合教育和文化传承。Experience traditional Chinese abacus online with interactive learning.">
@@ -115,62 +173,65 @@
             <section class="faq">
                 <h2>常见问题</h2>
                 
-                <!-- 中文部分 -->
-                <div class="chinese-faq" itemscope itemtype="https://schema.org/FAQPage">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <h3 itemprop="name">什么是二五珠算盘？</h3>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <div itemprop="text">
-                                <p>二五珠算盘是中国传统算盘的一种，每列有上方2颗珠子（每颗代表5）和下方5颗珠子（每颗代表1）。它是中国古代重要的计算工具，至今仍在使用。</p>
+                <!-- 常见问题部分 - 使用单一结构化数据 -->
+                <div itemscope itemtype="https://schema.org/FAQPage">
+                    <!-- 中文部分 -->
+                    <div class="chinese-faq">
+                        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                            <h3 itemprop="name">什么是二五珠算盘？</h3>
+                            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                <div itemprop="text">
+                                    <p>二五珠算盘是中国传统算盘的一种，每列有上方2颗珠子（每颗代表5）和下方5颗珠子（每颗代表1）。它是中国古代重要的计算工具，至今仍在使用。</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                            <h3 itemprop="name">算盘如何进行计算？</h3>
+                            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                <div itemprop="text">
+                                    <p>算盘通过拨动珠子来计算。珠子靠近横梁时计数，远离横梁时不计数。上珠每颗代表5，下珠每颗代表1。每列从右到左依次表示个位、十位、百位等。</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                            <h3 itemprop="name">算盘有什么历史意义？</h3>
+                            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                <div itemprop="text">
+                                    <p>算盘是中国古代四大发明之外的重要发明，有超过2000年的历史。它不仅是计算工具，也是中国传统文化的重要组成部分，对数学教育和思维发展有独特价值。</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <h3 itemprop="name">算盘如何进行计算？</h3>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <div itemprop="text">
-                                <p>算盘通过拨动珠子来计算。珠子靠近横梁时计数，远离横梁时不计数。上珠每颗代表5，下珠每颗代表1。每列从右到左依次表示个位、十位、百位等。</p>
+                    <!-- 英文部分 -->
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="english-faq">
+                        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                            <h3 itemprop="name">What is a 2-5 abacus?</h3>
+                            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                <div itemprop="text">
+                                    <p>A 2-5 abacus is a traditional Chinese abacus with 2 beads in the upper deck (each representing 5) and 5 beads in the lower deck (each representing 1). It has been an important calculation tool in ancient China and is still in use today.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <h3 itemprop="name">算盘有什么历史意义？</h3>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <div itemprop="text">
-                                <p>算盘是中国古代四大发明之外的重要发明，有超过2000年的历史。它不仅是计算工具，也是中国传统文化的重要组成部分，对数学教育和思维发展有独特价值。</p>
+                        
+                        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                            <h3 itemprop="name">How do calculations work on an abacus?</h3>
+                            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                <div itemprop="text">
+                                    <p>Calculations are performed by moving beads toward or away from the beam. Beads count when moved toward the beam, and don't count when away from it. Each upper bead represents 5, each lower bead represents 1. Columns represent place values from right to left: ones, tens, hundreds, etc.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                
-                <!-- 英文部分 -->
-                <h2>Frequently Asked Questions</h2>
-                <div class="english-faq" itemscope itemtype="https://schema.org/FAQPage">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <h3 itemprop="name">What is a 2-5 abacus?</h3>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <div itemprop="text">
-                                <p>A 2-5 abacus is a traditional Chinese abacus with 2 beads in the upper deck (each representing 5) and 5 beads in the lower deck (each representing 1). It has been an important calculation tool in ancient China and is still in use today.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <h3 itemprop="name">How do calculations work on an abacus?</h3>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <div itemprop="text">
-                                <p>Calculations are performed by moving beads toward or away from the beam. Beads count when moved toward the beam, and don't count when away from it. Each upper bead represents 5, each lower bead represents 1. Columns represent place values from right to left: ones, tens, hundreds, etc.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <h3 itemprop="name">What is the historical significance of the abacus?</h3>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <div itemprop="text">
-                                <p>The abacus is an important invention beyond China's Four Great Inventions, with over 2000 years of history. It's not just a calculation tool but also an essential part of Chinese traditional culture, offering unique value for mathematics education and cognitive development.</p>
+                        
+                        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                            <h3 itemprop="name">What is the historical significance of the abacus?</h3>
+                            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                <div itemprop="text">
+                                    <p>The abacus is an important invention beyond China's Four Great Inventions, with over 2000 years of history. It's not just a calculation tool but also an essential part of Chinese traditional culture, offering unique value for mathematics education and cognitive development.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
